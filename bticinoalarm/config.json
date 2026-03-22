@@ -1,0 +1,29 @@
+{
+  "name": "Sdomotica BTicino Alarm",
+  "version": "2026.03.1",
+  "slug": "sdomoticabtalarmpc",
+  "arch": ["amd64", "i386"],
+  "description": "Gateway for BTicino Alarm 4200/4201/4202",
+  "url": "https://www.facebook.com/sdomotica",
+   "webui": "http://[HOST]:[PORT:3010]",  
+  "startup": "application",
+  "boot": "auto",
+
+  "ports": {
+    "3010/tcp": 3010
+
+   },
+  "map": [
+    "share:rw",
+	"config:rw"
+  ],
+	"init": false,
+  "options": {},
+  "schema": {},
+  "hassio_api": true,
+  "homeassistant_api": true,
+  "host_network": true,
+  "hassio_role": "default",
+  "host_dbus": true
+
+}
