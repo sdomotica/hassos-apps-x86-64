@@ -1,0 +1,29 @@
+{
+  "name": "Sdomotica Home + Control",
+  "version": "2026.3.1",
+  "slug": "sdomoticanetatmopc",
+  "arch": ["amd64", "i386"],
+  "description": "For Living Now Smart, Smarther2 X8002, Netatmo Valve, Netatmo Meteo",
+  "url": "https://www.facebook.com/sdomotica",
+   "webui": "http://[HOST]:[PORT:3401]",  
+  "startup": "application",
+  "boot": "auto",
+
+  "ports": {
+    "3401/tcp": 3401
+
+   },
+  "map": [
+    "share:rw",
+	"config:rw"
+  ],
+	"init": false,
+  "options": {},
+  "schema": {},
+  "hassio_api": true,
+  "homeassistant_api": true,
+  "host_network": true,
+  "hassio_role": "default",
+  "host_dbus": true
+
+}
