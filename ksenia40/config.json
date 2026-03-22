@@ -1,0 +1,29 @@
+{
+  "name": "Sdomotica Ksenia 4.0",
+  "version": "2026.03.1",
+  "slug": "sdomoticaksenia40pc",
+  "arch": ["amd64", "i386"],
+  "description": "Gateway for Ksenia 4.0 Alarm",
+  "url": "https://www.facebook.com/sdomotica",
+   "webui": "http://[HOST]:[PORT:3020]",  
+  "startup": "application",
+  "boot": "auto",
+
+  "ports": {
+    "3020/tcp": 3020
+
+   },
+  "map": [
+    "share:rw",
+	"config:rw"
+  ],
+	"init": false,
+  "options": {},
+  "schema": {},
+  "hassio_api": true,
+  "homeassistant_api": true,
+  "host_network": true,
+  "hassio_role": "default",
+  "host_dbus": true
+
+}
