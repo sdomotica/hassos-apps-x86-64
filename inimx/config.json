@@ -1,0 +1,29 @@
+{
+  "name": "Sdomotica PrimeX Inim",
+  "version": "2026.05.1",
+  "slug": "sdomoticainimxpc",
+  "arch": ["amd64", "i386"],
+  "description": "Addon for PrimeX Inim Integration",
+  "url": "https://www.facebook.com/sdomotica",
+   "webui": "http://[HOST]:[PORT:3060]",  
+  "startup": "application",
+  "boot": "auto",
+
+  "ports": {
+    "3060/tcp": 3060
+
+   },
+  "map": [
+    "share:rw",
+	"config:rw"
+  ],
+	"init": false,
+  "options": {},
+  "schema": {},
+  "hassio_api": true,
+  "homeassistant_api": true,
+  "host_network": true,
+  "hassio_role": "default",
+  "host_dbus": true
+
+}
