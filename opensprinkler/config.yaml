@@ -1,0 +1,30 @@
+name: "OpenSprinkler by Sdomotica"
+description: "OpenSprinkler Firmware custom for BTicino SCS"
+version: "2026.9.1"
+slug: "opensprinkler_sdomotica_pc"
+arch:
+  - amd64
+init: false
+options: {}
+schema: {}
+# Abilita l'interfaccia protetta e integrata
+ingress: true
+ingress_port: 8080
+# Forza la creazione del pannello laterale nativo per Ingress
+panel: true
+panel_icon: "mdi:sprinkler-variant"
+privileged:
+  - SYS_RAWIO
+
+ports:
+  8080/tcp: 5557
+ports_description:
+  8080/tcp: Web interface
+dependencies:
+  - core_mosquitto
+  
+map:
+  - data:rw
+  - share:rw
+  - config:rw
+  
